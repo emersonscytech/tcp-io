@@ -43,7 +43,7 @@ tcpServer.on('connection', (clientSocket) => {
     console.log("[TCP SERVER]", "NEW CLIENT")
     let inerInterva1l = setInterval(() => {
         clientSocket.write(parseTCPData(getRandomRiders()));
-    }, 2000);
+    }, config.interval);
 });
 
 tcpServer.on('error', (err) => {
