@@ -29,9 +29,11 @@ let unparseTCPData = (data) => {
 }
 
 let getRandomRiders = () => {
-    let newRiders = [];
+    let newRiders = {
+        Riders: []
+    };
     markers.Riders.forEach((rider) => {
-        newRiders.push(randomRiderCoord(rider));
+        newRiders.Riders.push(randomRiderCoord(rider));
     });
     return newRiders;
 }
