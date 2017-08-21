@@ -3,7 +3,7 @@ const client = new net.Socket();
 const args = process.argv;
 
 const config = {
-    host: args[2] || 5.83.10.123,
+    host: args[2] || '5.83.10.123',
     port: args[3] || 3030,
     parser: args[4] || "none"
 }
